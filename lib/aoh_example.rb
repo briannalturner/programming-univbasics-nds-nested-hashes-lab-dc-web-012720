@@ -7,13 +7,14 @@ KATE_G = { name:  "Kate Gompert", occupation: "None" }
 BRUCE_G = { name:  "Bruce Green", occupation: "Fan of Mildred" }
 
 def assembled_aoh
-  arr = [DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
+  arr = [DON_G, JOELLE_VD
   arr
 end
 
 def literal_aoh
-  # Using Array literal syntax only, build a nested array that uses the data in
-  # held in the constants
+  arr = [DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
+  arr.sort
+  arr
 end
 
 def aoh_lookup(aoh, row, key)
